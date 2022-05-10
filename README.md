@@ -28,5 +28,6 @@ Used functions to create a simple Rock Scissors Paper game.
 
 ```Pseudo-Code ;) ```
 
-![ScreenShot](https://user-images.githubusercontent.com/88345845/167727072-1516867d-7342-4f7d-aad4-616c3c15917a.jpg "width:500px", "hight:500px")
+![ScreenShot](https://user-images.githubusercontent.com/88345845/167727072-1516867d-7342-4f7d-aad4-616c3c15917a.jpg)
 
+<img src="https://user-images.githubusercontent.com/88345845/167727072-1516867d-7342-4f7d-aad4-616c3c15917a.jpg" alt="Pseudo-code" width="200"/>
