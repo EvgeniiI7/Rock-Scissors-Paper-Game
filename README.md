@@ -26,7 +26,7 @@ Used functions to create a simple Rock Scissors Paper game.
 
 * Scissors: wins against paper, loses to rock, and ties against itself.
 
-```Pseudo-Code ```
+```Pseudo-Code;) ```
 
 ![ScreenShot](https://user-images.githubusercontent.com/88345845/167727072-1516867d-7342-4f7d-aad4-616c3c15917a.jpg)
 
