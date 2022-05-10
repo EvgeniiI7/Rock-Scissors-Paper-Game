@@ -28,5 +28,5 @@ Used functions to create a simple Rock Scissors Paper game.
 
 ```Pseudo-Code ```
 
-![ScreenShot](https://github.com/EvgeniiI7/Rock-Scissors-Paper-Game/issues/1#issue-1231722047.png)
+![ScreenShot](https://github.com/EvgeniiI7/Rock-Scissors-Paper-Game/issues/1#issue-1231722047)
 
