@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+
+    <h1 style="text-align:center; margin-top:20%;">
+      Let's play Rock Paper Scissors!<br /> Please Refresh to play again!
+    </h1>
+
+    <script type="text/javascript">
+      // Create an array of the three game choices (Rock, Paper, or Scissors) r = 0, p = 1, s = 2.
+      var gameChoices = ['r', 'p', 's'];
+
+      // Create variables to hold the number of wins, losses, and ties. They start at 0.
+      var wins = 0;
+      var losses = 0;
+      var ties = 0;
+
+      for (var i = 0; i < 3; i++) {
+        // Randomly choose a choice from the gameChoices array. This is the computer's turn. 
+        // Used Methods Math.random()
+        var computerTurn =
+          gameChoices[Math.floor(Math.random() * gameChoices.length)];
+
+        // Collect the user's response and convert to  ONLY LOWER case. This is the user's turn.
+        var userTurn = prompt('Enter r, p, or s to play game!');
+        userTurn = userTurn.toLowerCase();
+
+        // Create the game logic to run if the user chooses a valid game choice
+        if (userTurn === 'r' || userTurn === 'p' || userTurn === 's') { // this is a || or operator used inside in (if) operator . it's mean the code will run until one of the choices will be true if all of them falls  then move on. if one of them true then execute
+          alert('The computer chose ' + computerTurn);
+
+          // Win/lose conditions:
+          // it means that if the first (if) statement fails,then try another one. if the first (if) is true, then will never get to checking the (else if) statement
+          if (
+            (userTurn === 'r' && computerTurn === 's') || // checking the picked up choices 
+            (userTurn === 's' && computerTurn === 'p') ||
+            (userTurn === 'p' && computerTurn === 'r')
+          ) {
+            wins++;
+            alert("You've won " + wins + ' time(s)!');
+          } else if (userTurn === computerTurn) {
+            ties++;
+            alert("You've tied " + ties + ' time(s).');
+          } else {
+            losses++;
+            alert("You've lost " + losses + ' time(s).');
+          }
+        } else {
+          alert("Please choose 'r', 'p' or 's'!");
+        }
+      }
+
+      // When the game is over, alert the final total to the user. We can use the \n character to make a line break.
+      alert(
+        'Total wins: ' +
+          wins +
+          '\nTotal ties: ' +
+          ties +
+          '\nTotal losses: ' +
+          losses
+      );
+    </script>
+  </body>
+</html>
